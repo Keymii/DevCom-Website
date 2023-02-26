@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './HomePage.module.css';
+import { NavLink } from 'react-router-dom';
 
 const HomePage = () => (
   
@@ -9,10 +10,16 @@ const HomePage = () => (
     <div className={styles.navbardiv1}></div>
     <div className={styles.navbardiv2}></div>
     <div className={styles.cover}>
-      <div  className={styles.coverp}>Digitalizing  the<br/>Future <br/> Ahead </div>
     </div>
     <div className={styles.empty1}></div>
-    <div className={styles.box1}></div>
+    <div className={styles.aboutBox}>
+      <div className={styles.aboutBox2}>
+        <div className={styles.aboutText}>About</div>
+        <div className={styles.aboutSnippet}>  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sapiente incidunt quo modi accusamus sit dolores a ab eligendi ex aliquid praesentium harum, omnis unde, eos, assumenda sunt maiores odit nisi adipisci!</p>
+          <NavLink to="/about"><button className={styles.button}>Read More</button></NavLink>
+</div>
+      </div>
+    </div>
     
   </div>
 );
