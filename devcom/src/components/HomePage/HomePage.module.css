@@ -2,7 +2,12 @@
 .cover{
     background: #799785 ;
     height: calc(100vh - 50px);
-    border-radius: 0px 0px 40px 40px;
+    border-radius: 0px 0px 30px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.coverp{
+    flex: 1;
 }
 .empty1{
     height: 80px;

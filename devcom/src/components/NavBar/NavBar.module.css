@@ -1,7 +1,7 @@
 .NavBar {
     position: fixed;
     z-index: 5;
-    padding-left: 10px;
+    padding-left: 30px;
     padding-right: 10px;
     top: 0;
     width: 100%;
@@ -19,7 +19,7 @@
 .navlogo{
     position: absolute;
     width: auto;
-    left: calc(100vw - 70px);
+    left: calc(1500px - 70px);
 }
 
 .navitem{
