@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './AboutPage.module.css';
+import NavBar from '../NavBar/NavBar';
 
 const AboutPage = () => (
+  <>
   <div className={styles.AboutPage}>
     AboutPage Component
   </div>
+  </>
 );
 
 AboutPage.propTypes = {};

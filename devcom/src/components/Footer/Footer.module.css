@@ -6,8 +6,7 @@
 
     display: flex;
     margin: auto;
-    height:20vh ;
-    min-height:60px ;
+    height:100px ;
     color: #5B99E3;
     flex-direction: row;
 
@@ -45,14 +44,14 @@
 }
 .Ctop{
     flex: 1;
-    font-size: 3vh;
+    font-size: 20px;
     /* display: flex;
     flex-direction: column; */
 }
 .Cbottom{
     flex: 1;
     color: #2E4D71;
-    font-size: 3vh;
+    font-size: 20px;
 }
 .Cbottom :hover{
     color: #477AB7;
