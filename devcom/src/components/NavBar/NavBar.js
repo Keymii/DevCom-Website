@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './NavBar.module.css';
 import logo from '../../assets/DC_logo.png';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => (
   <>
@@ -12,12 +13,12 @@ const NavBar = () => (
           <div className={styles.navlogo}>
             <img src={logo} height='55'/>
           </div>
-          <div className={styles.navitem}><p>Home</p></div>&nbsp;&nbsp;&nbsp;
-          <div className={styles.navitem}><p>Projects</p></div>&nbsp;&nbsp;&nbsp;
-          <div className={styles.navitem}><p>Team</p></div>&nbsp;&nbsp;&nbsp;
-          <div className={styles.navitem}><p>Gallery</p></div>&nbsp;&nbsp;&nbsp;
-          <div className={styles.navitem}><p>About Us</p></div>&nbsp;&nbsp;&nbsp;
-          <div className={styles.navitem}><p>Contact Us</p></div>
+          <div className={styles.navitem}><NavLink to="/home"><a>Home</a></NavLink></div>
+          <div className={styles.navitem}><NavLink to="/"><a>Projects</a></NavLink></div>
+          <div className={styles.navitem}><NavLink to="/"><a>Team</a></NavLink></div>
+          <div className={styles.navitem}><NavLink to="/"><a>Gallery</a></NavLink></div>
+          <div className={styles.navitem}><NavLink to="/about"><a>About Us</a></NavLink></div>
+          <div className={styles.navitem}><NavLink to="/"><a>Contact Us</a></NavLink></div>
         </div>
         </div>
     </div>
