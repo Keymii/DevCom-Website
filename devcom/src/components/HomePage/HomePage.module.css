@@ -5,9 +5,12 @@
     border-radius: 0px 0px 30px 30px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    text-align: end;
 }
 .coverp{
-    flex: 1;
+    font-size: 90px;
 }
 .empty1{
     height: 80px;
