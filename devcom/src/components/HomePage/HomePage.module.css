@@ -72,6 +72,11 @@
     position: fixed;
     z-index: 20;
     padding-top: 90px;
+    color: #000;
+    animation-name: loadcover;
+    animation-duration: 1.5s;  
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
     width: 100vw;
     text-align: end;
     left: -25px;  
@@ -84,6 +89,13 @@
     100%{
         background: #799785 ;
     }
+}
+
+@keyframes loadcover {
+    0%{
+        left: 200vw
+    }    
+
 }
 
 .empty1{
