@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './landing.module.css';
-import { useNavigate } from 'react-router-dom';
+import { Router } from 'react-router-dom';
 
 var wordlist = ['Ideate.', 'Design.', 'Build.', 'Create.', 'Develop.', 'DevCom.']
 function gothroughwords(){
@@ -11,6 +11,9 @@ function gothroughwords(){
   }
 }
 
+function navigate(page){
+  Router.navigate(page)
+}
 
 const Landing = () => (
   <>
