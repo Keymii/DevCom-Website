@@ -4,7 +4,10 @@ import styles from './HomePage.module.css';
 
 const HomePage = () => (
   <div className={styles.HomePage}>
-    HomePage Component
+    <div className={styles.cover}>
+       HomePage Component
+    </div>
+    <div className={styles.empty1}></div>
   </div>
 );
 

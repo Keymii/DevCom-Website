@@ -1,1 +1,9 @@
 .HomePage {}
+.cover{
+    background: #799785 ;
+    height: calc(100vh - 50px);
+    border-radius: 0px 0px 40px 40px;
+}
+.empty1{
+    height: 80px;
+}

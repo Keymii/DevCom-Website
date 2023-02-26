@@ -11,7 +11,7 @@ import HomePage from './components/HomePage/HomePage';
 
 function App() {
   return (
-  <>
+  <div>
   <NavBar/>
   <div class="body">
     <Router>
@@ -24,7 +24,7 @@ function App() {
     </Router> 
   <Footer/>
   </div>
-  </>
+  </div>
   );
 }
 
