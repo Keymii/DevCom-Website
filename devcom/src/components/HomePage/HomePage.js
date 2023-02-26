@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './HomePage.module.css';
 
 const HomePage = () => (
+  
   <div className={styles.HomePage}>
     <div  className={styles.coverp}>Digitalizing <br/>the<br/>Future <br/> Ahead </div>
     <div className={styles.cover}>
