@@ -51,17 +51,33 @@
 
 .cover{
     background: #799785 ;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
+    min-height: 500px;
     border-radius: 0px 0px 30px 30px;
     display: flex;
     flex-direction: column;
+    z-index: 10;
     justify-content: center;
-    align-items: end;
-    text-align: end;
+   
+    
 }
 .coverp{
     font-size: 90px;
+    margin-right: 10px;
+    position: fixed;
+    z-index: 20;
+    padding-top: 90px;
+    width: 100vw;
+    text-align: end;
+    left: -25px;
 }
 .empty1{
-    height: 80px;
+    height: 300px;
+}
+.box1{
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-color: rgb(156, 197, 181);
+    z-index: 30;
+    position: relative;
 }
