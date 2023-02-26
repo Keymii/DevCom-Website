@@ -1,7 +1,7 @@
 .HomePage {}
 .cover{
     background: #799785 ;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 100px);
     border-radius: 0px 0px 30px 30px;
     display: flex;
     flex-direction: column;
