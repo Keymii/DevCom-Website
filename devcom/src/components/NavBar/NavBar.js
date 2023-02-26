@@ -4,7 +4,8 @@ import styles from './NavBar.module.css';
 import logo from '../../assets/DC_logo.png';
 
 const NavBar = () => (
-  <div className={styles.NavBarCont}>
+  <>
+  <div id='navbar' className={styles.NavBarCont}>
     <div>
       <div className={styles.NavBar}>
         <div className={styles.navflex1}>
@@ -21,6 +22,7 @@ const NavBar = () => (
         </div>
     </div>
   </div>
+  </>
 );
 
 NavBar.propTypes = {};
