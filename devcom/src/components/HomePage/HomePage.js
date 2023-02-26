@@ -5,8 +5,11 @@ import styles from './HomePage.module.css';
 const HomePage = () => (
   
   <div className={styles.HomePage}>
+    <div className={styles.navbardiv1}></div>
+    <div className={styles.navbardiv2}></div>
     <div className={styles.cover}>
-      <div  className={styles.coverp}>Digitalizing  the<br/>Future <br/> Ahead </div>
+      <div  className={styles.coverp}>
+        Digitalizing  the<br/>Future <br/> Ahead </div>
     </div>
     <div className={styles.empty1}></div>
   </div>

@@ -1,4 +1,54 @@
 .HomePage {}
+
+.navbardiv1{
+    z-index: 100;
+    background-color: #799785;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 60px;
+    position: fixed;
+    animation-name: navbaranim1;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;  
+}
+.navbardiv2{
+    z-index: 100;
+    background-color: #799785;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 60px;
+    position: fixed;
+    animation-name: navbaranim2;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;  
+}
+
+@keyframes navbaranim1 {
+    0%{
+    width: 50%;
+    }
+    100%{
+        width: 0;
+    }   
+      
+}
+
+@keyframes navbaranim2 {
+    0%{
+    width: 50%;
+    }
+    100%{
+        width: 0;
+    }   
+      
+}
+
 .cover{
     background: #799785 ;
     height: calc(100vh - 100px);
