@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+@font-face {
+  font-family: "LatoRegular";   /*Can be any text*/
+  src: local("Lato-Regular"),
+    url("./fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "LatoBlack";   /*Can be any text*/
+  src: local("Lato-Black"),
+    url("./fonts/Lato/Lato-Black.ttf") format("truetype");
+}
