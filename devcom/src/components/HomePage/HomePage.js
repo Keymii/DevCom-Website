@@ -6,9 +6,9 @@ import { NavLink } from 'react-router-dom';
 const HomePage = () => (
   
   <div className={styles.HomePage}>
-    <div  className={styles.coverp}>Digitalizing <br/>the<br/>Future <br/> Ahead </div>
     <div className={styles.navbardiv1}></div>
     <div className={styles.navbardiv2}></div>
+    <div  className={styles.coverp}>Digitalizing <br/>the<br/>Future <br/> Ahead </div>
     <div className={styles.cover}>
     </div>
     <div className={styles.empty1}></div>

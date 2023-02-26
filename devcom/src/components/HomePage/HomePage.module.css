@@ -2,29 +2,27 @@
 
 .navbardiv1{
     z-index: 100;
-    background-color: #799785;
     top: 0;
     left: 0;
     width: 50%;
     height: 60px;
     position: fixed;
     animation-name: navbaranim1;
-    animation-duration: 2s;
-    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;  
 }
 .navbardiv2{
     z-index: 100;
-    background-color: #799785;
     top: 0;
     right: 0;
     width: 50%;
     height: 60px;
     position: fixed;
     animation-name: navbaranim2;
-    animation-duration: 2s;
-    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;  
 }
@@ -32,9 +30,11 @@
 @keyframes navbaranim1 {
     0%{
     width: 50%;
+    background-color: #fff;
     }
     100%{
         width: 0;
+        background-color: #799785;
     }   
       
 }
@@ -42,23 +42,28 @@
 @keyframes navbaranim2 {
     0%{
     width: 50%;
+    background-color: #fff;
     }
     100%{
         width: 0;
+        background-color: #799785;
     }   
       
 }
 
 .cover{
-    background: #799785 ;
     height: calc(100vh - 50px);
     min-height: 500px;
     border-radius: 0px 0px 30px 30px;
     display: flex;
     flex-direction: column;
     z-index: 10;
-    justify-content: center;
-   
+    justify-content: center;  
+    animation-name: dropdown;
+    animation-duration: 1s;  
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
     
 }
 .coverp{
@@ -69,8 +74,18 @@
     padding-top: 90px;
     width: 100vw;
     text-align: end;
-    left: -25px;
+    left: -25px;  
 }
+
+@keyframes dropdown {
+    0%{
+        background: #fff;
+    }    
+    100%{
+        background: #799785 ;
+    }
+}
+
 .empty1{
     height: 300px;
 }
