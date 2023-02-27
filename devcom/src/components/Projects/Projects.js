@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Projects.module.css';
+import headImg from '../../assets/Page 1.png'
 const Projects = () => (
   <div className={styles.Projects}>
     <div className={styles.navbardiv1}></div>
@@ -9,7 +10,7 @@ const Projects = () => (
    
     <div className={styles.cover}>
     <div className={styles.coverContent}>
-      <div className={styles.projectIcons}></div>
+      <div ><img className={styles.projectIcons} src={headImg}/></div>
     <div  className={styles.coverp}>Our <br/>Projects</div>
     </div>
     </div>
