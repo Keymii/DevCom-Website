@@ -13,9 +13,10 @@ import Team from './components/Team/Team';
 function App() {
   return (
   <div>
-  <NavBar/>
+  
   <div class="body">
     <Router>
+      <NavBar/>
       <Routes>
         <Route exact path = "/" element={<Landing/>}/>
         <Route exact path = "/home" element={<HomePage/>}/>

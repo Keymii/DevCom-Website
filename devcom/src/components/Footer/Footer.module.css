@@ -3,7 +3,8 @@
     padding:10px;
     width: 100%;
     background-color: rgb(23, 23, 23);
-
+    z-index: 30;
+    position: relative;
     display: flex;
     margin: auto;
     height:100px ;
