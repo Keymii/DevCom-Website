@@ -1,1 +1,39 @@
 .AboutPage {}
+.cover{
+    background: #799785 ;
+    height: calc(100vh - 50px);
+    min-height: 500px;
+    border-radius: 0px 0px 30px 30px;
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+    justify-content: end;
+   
+    
+}
+.coverp{
+    font-size: 80px;
+    margin-right: 10px;
+    /* position: fixed; */
+    z-index: 100;
+    border: 2px solid black;
+    /* padding: 25px; */
+    /* padding-top: 0px; */
+    /* width: 100vw; */
+    text-align: end;
+    /* align-items: center; */
+    /* margin-right: -200px; */
+    width: max-content;
+    height: max-content;
+    transform: rotate(-90deg);
+}
+.empty1{
+    height: 300px;
+}
+.box1{
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-color: rgb(156, 197, 181);
+    z-index: 30;
+    position: relative;
+}
