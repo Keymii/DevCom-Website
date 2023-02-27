@@ -3,6 +3,7 @@ import useFetch from "./useFetch";
 import PropTypes from 'prop-types';
 import styles from './Team.module.css';
 import db from './membersDB';
+import { ReactComponent as YourSvg } from './leadership.svg';
 
 const Team = () => {
 
@@ -19,6 +20,7 @@ const Team = () => {
     <div className={styles.cover}>
     </div>
     <div className={styles.empty1}></div>
+    <div className={styles.SVG}><YourSvg /></div>
     <div className={styles.ocBox}>
       <div className={styles.ocBox2}>
         <div className={styles.ocText}>Overall<br/> Coordinators</div>

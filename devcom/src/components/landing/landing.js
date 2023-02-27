@@ -26,7 +26,7 @@ const Landing = () => {
           return wordlist[i]
         }
       });
-    }, 66);
+    }, 80);
     // clear out the interval using the id when unmounting the component
     return () => clearInterval(myInterval);
   }, []);
