@@ -8,6 +8,8 @@ import "./fonts/Lato/Lato-Black.ttf";
 import AboutPage from './components/AboutPage/AboutPage';
 import NavBar from './components/NavBar/NavBar';
 import HomePage from './components/HomePage/HomePage';
+import Projects from './components/Projects/Projects';
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route exact path = "/home" element={<HomePage/>}/>
         <Route exact path = "/footer" element={<Footer/>}/>
         <Route exact path='/about' element={<AboutPage/>}/>
+        <Route exact path='/projects' element={<Projects/>}/>
       </Routes>
     </Router> 
   <Footer/>

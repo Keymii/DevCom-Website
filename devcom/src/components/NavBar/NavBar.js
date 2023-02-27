@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './NavBar.module.css';
-import logo from '../../assets/DC_logo.png';
-
+import logoB from '../../assets/DC_logo.png';
+import logoW from '../../assets/logo_white.png';
 const NavBar = () => (
   <>
   <div id='navbar' className={styles.NavBarCont}>
@@ -10,8 +10,9 @@ const NavBar = () => (
       <div className={styles.NavBar}>
         <div className={styles.navflex1}>
           <div className={styles.navlogo}>
-            <img src={logo} height='55'/>
+            <img src={logoB} height='55' />
           </div>
+      
           <div className={styles.navitem}><p>Home</p></div>&nbsp;&nbsp;&nbsp;
           <div className={styles.navitem}><p>Projects</p></div>&nbsp;&nbsp;&nbsp;
           <div className={styles.navitem}><p>Team</p></div>&nbsp;&nbsp;&nbsp;
