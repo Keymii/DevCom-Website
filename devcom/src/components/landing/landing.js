@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './landing.module.css';
 import { Router } from 'react-router-dom';
 
-var wordlist = ['Ideate.', 'Design.', 'Build.', 'Create.', 'Develop.', 'DevCom.']
+var wordlist = ['Ideate.', 'Design.', 'Build.', 'Create.', 'Develop.']
 var i = 0;
 
 
@@ -17,7 +17,7 @@ const Landing = () => {
     // create a interval and get the id
     const myInterval = setInterval(() => {
       setWord(() => {
-        if(i<5){
+        if(i<4){
           i++;
           return wordlist[i]
         }
@@ -26,7 +26,7 @@ const Landing = () => {
           return wordlist[i]
         }
       });
-    }, 80);
+    }, 66);
     // clear out the interval using the id when unmounting the component
     return () => clearInterval(myInterval);
   }, []);

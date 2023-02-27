@@ -30,8 +30,43 @@ right: -10vh;
 }
 .box1{
     width: 100%;
-    height: calc(100vh - 50px);
+    height: calc(80vh - 50px);
+    min-height: 600px;
     background-color: rgb(156, 197, 181);
     z-index: 30;
     position: relative;
+}
+.box1p{
+    font-size: 90px;
+    position: absolute;
+    top: calc((80vh - 50px)/100);
+    left:20px;
+}
+.whatdowedotxt{
+    position: absolute;
+    bottom: 20px;
+
+    right: 20px;
+    left: 20vw
+}
+.box2{
+    width: 100%;
+    height: calc(80vh - 50px);
+    min-height: 600px;
+    background-color: rgb(156, 197, 181);
+    z-index: 30;
+    position: relative;
+}
+.box2p{
+    font-size: 90px;
+    position: absolute;
+    top: calc((80vh - 50px)/100);
+    right:20px;
+}
+.projects{
+    position: absolute;
+    bottom: 20px;
+
+    left: 20px;
+    right: 20vw
 }

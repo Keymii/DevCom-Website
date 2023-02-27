@@ -16,7 +16,9 @@
 .center_text{
     width: 100px;
     height: 100px;
-    background-color: red;
+    font-size: 30px;
+    color: #acacac;
+    /* background-color: red; */
 }
 
 .circle{
@@ -31,6 +33,7 @@
     animation-delay: 1s;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+    
 }
 
 @keyframes animcircles {
