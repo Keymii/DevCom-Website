@@ -1,36 +1,46 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styles from './landing.module.css';
 import { Router } from 'react-router-dom';
 
 var wordlist = ['Ideate.', 'Design.', 'Build.', 'Create.', 'Develop.', 'DevCom.']
-function gothroughwords(){
-  for (let i = 0; i< wordlist.length; i++) {
-  const val = wordlist[i];
-  return val
-  }
-}
+var i = 0;
+
 
 function navigate(page){
   Router.navigate(page)
 }
 
-const Landing = () => (
-  <>
-  <div className={styles.Landing}>
-    <div className={styles.center_text}>
-      {gothroughwords()}
-    </div>
-   </div>
-  <div className={styles.circle}/>
-  {setTimeout(() => {
-    navigate('/home')
-  }, 3000)}
-  </>
-);
+const Landing = () => {
+  const [word, setWord] = useState(wordlist[0]);
+  useEffect(() => {
+    // create a interval and get the id
+    const myInterval = setInterval(() => {
+      setWord(() => {
+        if(i<5){
+          i++;
+          return wordlist[i]
+        }
+        else{
+          i=0;
+          return wordlist[i]
+        }
+      });
+    }, 80);
+    // clear out the interval using the id when unmounting the component
+    return () => clearInterval(myInterval);
+  }, []);
+  return (
+    <>
+      <div className={styles.Landing}>
+      <div className={styles.center_text}>
+        {word}
+      </div>
+      </div>
+      <div className={styles.circle}/>
+    </>
+  );
+}
 
-Landing.propTypes = {};
-
-Landing.defaultProps = {};
 
 export default Landing;
