@@ -1,31 +1,29 @@
 .AboutPage {}
 .cover{
     background: #799785 ;
-    height: calc(100vh - 50px);
-    min-height: 500px;
+
+    min-height: calc(100vh - 50px);;
     border-radius: 0px 0px 30px 30px;
     display: flex;
     flex-direction: row;
     z-index: 10;
     justify-content: end;
-   
-    
 }
 .coverp{
-    font-size: 80px;
-    margin-right: 10px;
-    /* position: fixed; */
-    z-index: 100;
-    border: 2px solid black;
-    /* padding: 25px; */
-    /* padding-top: 0px; */
-    /* width: 100vw; */
-    text-align: end;
-    /* align-items: center; */
-    /* margin-right: -200px; */
-    width: max-content;
-    height: max-content;
-    transform: rotate(-90deg);
+font-size: 90px;
+transform: rotate(-90deg);
+position: absolute;
+top: calc((100vh - 50px)/2);
+right: -10vh;
+
+
+}
+.whatrwe{
+    margin-top: 60px;
+    position: relative;
+    vertical-align: bottom;
+    margin-right:50vw ;
+    margin-left: 10vw;
 }
 .empty1{
     height: 300px;

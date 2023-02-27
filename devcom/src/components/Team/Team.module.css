@@ -116,7 +116,10 @@
 .empty1{
     height: 300px;
 }
-.aboutBox{
+.empty2{
+    height: 500px;
+}
+.ocBox{
     width: 100%;
     height: calc(100vh - 50px);
     background-color: rgb(156, 197, 181);
@@ -126,14 +129,14 @@
     flex-direction: column;
     justify-content: center;
 }
-.aboutBox2{
+.ocBox2{
     display:flex ;
     flex-direction: row;
     justify-content: end;
     align-items: center;    
 
 }
-.aboutText{
+.ocText{
     font-size: 90px;
     transform: rotate(-90deg);
 }
@@ -161,4 +164,21 @@
     height: 200px;
     width: auto;
     object-fit: cover;
+}
+.plBox{
+    width: 100%;
+    height: calc(100vh - 50px);;
+    background-color: rgb(156, 197, 181);
+    z-index: 30;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.PLs{
+    display: flex;
+    flex-direction: row
+}
+.pltitle{
+    font-size: 90px;
 }

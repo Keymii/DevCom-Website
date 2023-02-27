@@ -42,7 +42,7 @@ export default  db = {
                   
       }
   ],
-  "PLs":[
+  "PL1":[
       {
           "id":3,
           "name": "Palash Mittal",
@@ -68,6 +68,8 @@ export default  db = {
           "insta": "",
           "linkedIn": "" 
       },
+    ],
+    "PL2":[
       {
           "id":6,
           "name": "Ashwin Ramchandran",
