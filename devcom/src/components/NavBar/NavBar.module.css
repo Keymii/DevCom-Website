@@ -21,14 +21,35 @@
     position: absolute;
     width: auto;
     left: calc(99vw - 70px);
+    cursor: pointer;
+    top:-4px;
 }
 
 .navitem{
+    
+    position: relative;
     display: flex;
     flex-direction: column;
     color: black;
+    cursor: pointer;
+    padding: 13px 0.5vw;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;    
+}
+    
 
 .navitem :hover{
     color:rgb(246, 246, 246) ;
 }
+/* .NavBarCont{
+    display: flex;
+    flex-direction: column;
+} */

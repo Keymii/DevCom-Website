@@ -3,22 +3,30 @@ import PropTypes from 'prop-types';
 import styles from './NavBar.module.css';
 import logoB from '../../assets/DC_logo.png';
 import logoW from '../../assets/logo_white.png';
+import { NavLink } from 'react-router-dom';
+const goToBottom=()=>{
+  window.scrollTo({
+    top:10000,
+    behavior: 'smooth',
+});
+};
+
+
 const NavBar = () => (
   <>
   <div id='navbar' className={styles.NavBarCont}>
     <div>
       <div className={styles.NavBar}>
         <div className={styles.navflex1}>
-          <div className={styles.navlogo}>
+          <NavLink to="/"><div className={styles.navlogo}>
             <img src={logoB} height='55' />
-          </div>
-      
-          <div className={styles.navitem}><p>Home</p></div>&nbsp;&nbsp;&nbsp;
-          <div className={styles.navitem}><p>Projects</p></div>&nbsp;&nbsp;&nbsp;
-          <div className={styles.navitem}><p>Team</p></div>&nbsp;&nbsp;&nbsp;
-          <div className={styles.navitem}><p>Gallery</p></div>&nbsp;&nbsp;&nbsp;
-          <div className={styles.navitem}><p>About Us</p></div>&nbsp;&nbsp;&nbsp;
-          <div className={styles.navitem}><p>Contact Us</p></div>
+          </div></NavLink>
+          <div className={styles.navitem}><NavLink to="/home"  onClick={() => window.scrollTo({top:0, behavior:'smooth'})}><a>Home</a></NavLink></div>
+          <div className={styles.navitem}><NavLink to="/projects"  onClick={() => window.scrollTo({top:0, behavior:'smooth'})}><a>Projects</a></NavLink></div>
+          <div className={styles.navitem}><NavLink to="/team"  onClick={() => window.scrollTo({top:0, behavior:'smooth'})}><a>Team</a></NavLink></div>
+          <div className={styles.navitem}><NavLink to="/gallery"  onClick={() => window.scrollTo({top:0, behavior:'smooth'})}><a>Gallery</a></NavLink></div>
+          <div className={styles.navitem}><NavLink to="/about"  onClick={() => window.scrollTo({top:0, behavior:'smooth'})}><a>About Us</a></NavLink></div>
+          <div className={styles.navitem}><a onClick={goToBottom}>Contact Us</a></div>
         </div>
         </div>
     </div>
