@@ -6,7 +6,6 @@ import NavBar from '../NavBar/NavBar';
 const AboutPage = () => (
   <>
   <div className={styles.AboutPage}>
-    
     <div className={styles.cover}>
     <div  className={styles.coverp}>What  is <br/> DevCom?</div>
     <div className={styles.whatrwe}>

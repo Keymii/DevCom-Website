@@ -87,3 +87,120 @@
         background-color: white;
     }
 }
+
+a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:visited{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.dclogo{
+    position: fixed;
+    z-index: 62;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: #333;
+    top: 100vh;
+    left: 40vw;
+    animation-name: glowupdc;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes glowupdc {
+    0%{
+        top: 100vh;
+    }
+    100%{
+        top: 20vh;
+    }
+}
+
+.homelogo{
+    position: fixed;
+    z-index: 62;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: #333;
+    top: 100vh;
+    left: 27.5vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name:glowuphome;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes glowuphome {
+    0%{
+        top: 100vh;
+    }
+    100%{
+        top: 55vh;
+    }
+}
+
+
+.aboutlogo{
+    position: fixed;
+    z-index: 62;
+    width: 7.5vw;
+    height: 7.5vw;
+    border-radius: 50%;
+    background-color: #333;
+    top: 100vh;
+    left: 62.5vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name:glowupabout;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes glowupabout {
+    0%{
+        top: 100vh;
+    }
+    100%{
+        top: 75vh;
+    }
+}
+
+
+.emptylogo{
+    position: fixed;
+    z-index: 62;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: #333;
+    top: 100vh;
+    left: 42.5vw;
+    animation-name:glowupempty;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes glowupempty {
+    0%{
+        top: 100vh;
+    }
+    100%{
+        top: 85vh;
+    }
+}

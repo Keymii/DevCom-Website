@@ -35,12 +35,12 @@
     padding: 13px 0.5vw;
 }
 
-a{
+.navitem-a{
     text-decoration: none;
     color: black;
 }
 
-a:visited{
+.navitem-a:visited{
     text-decoration: none;
     color: black;    
 }

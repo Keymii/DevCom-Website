@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styles from './landing.module.css';
-import { Router } from 'react-router-dom';
+import { Link, Router, NavLink } from 'react-router-dom';
+
 
 var wordlist = ['Ideate.', 'Design.', 'Build.', 'Create.', 'Develop.']
 var i = 0;
@@ -38,6 +39,10 @@ const Landing = () => {
       </div>
       </div>
       <div className={styles.circle}/>
+      <div className={styles.dclogo}/>
+      <div className={styles.homelogo}><Link to='/home'><a>Home</a></Link></div>
+      <div className={styles.aboutlogo}><Link to='/about'><a>About</a></Link></div>
+      <div className={styles.emptylogo}/>
     </>
   );
 }

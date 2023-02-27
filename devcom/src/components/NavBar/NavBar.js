@@ -24,7 +24,6 @@ const NavBar = () => (
           <div className={styles.navitem}><NavLink to="/home"  onClick={() => window.scrollTo({top:0, behavior:'smooth'})}><a>Home</a></NavLink></div>
           <div className={styles.navitem}><NavLink to="/projects"  onClick={() => window.scrollTo({top:0, behavior:'smooth'})}><a>Projects</a></NavLink></div>
           <div className={styles.navitem}><NavLink to="/team"  onClick={() => window.scrollTo({top:0, behavior:'smooth'})}><a>Team</a></NavLink></div>
-          <div className={styles.navitem}><NavLink to="/gallery"  onClick={() => window.scrollTo({top:0, behavior:'smooth'})}><a>Gallery</a></NavLink></div>
           <div className={styles.navitem}><NavLink to="/about"  onClick={() => window.scrollTo({top:0, behavior:'smooth'})}><a>About Us</a></NavLink></div>
           <div className={styles.navitem}><a onClick={goToBottom}>Contact Us</a></div>
         </div>
